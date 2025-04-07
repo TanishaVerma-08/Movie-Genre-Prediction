@@ -1,21 +1,68 @@
-# Movie-Genre-Prediction
-1. Import libraries: This code imports necessary libraries for data analysis, feature extraction, model training, and evaluation.
-<br>
+# 🎥 Movie Genre Prediction
 
-2. Load the dataset: Load the movie genre dataset into a Pandas DataFrame.
-<br>
+This project focuses on predicting movie genres based on their overviews using natural language processing and machine learning techniques. The analysis is conducted within a Jupyter Notebook environment.
 
-3. Preprocess the data: Fill missing values in the overview column with empty strings.
-<br>
+## 📋 Project Overview
 
-4. Create feature vectors: Use the CountVectorizer to convert the textual overviews into numerical feature vectors. This process removes stop words and counts the occurrences of each word in each overview.
-<br>
+The primary objectives of this project are:
 
-5. Separate features and target labels: Separate the feature vectors (X) from the target labels (y), which in this case are the movie genres.
-<br>
+- To preprocess and analyze textual data from movie overviews.
+- To implement a classification model that predicts movie genres based on their overviews.
 
-6. Split the data: Divide the data into training and test sets using train_test_split. This allows you to train the model on one set and evaluate its performance on unseen data.
-<br>
+## 🛠️ Features
 
-7. Train the model: Train a Multinomial Naive Bayes classifier using the training features and labels. This model is suitable for text classification tasks.
-<br>
+- **Data Preprocessing**: Handling missing values and converting textual data into numerical feature vectors.
+- **Model Training**: Implementing a Multinomial Naive Bayes classifier for genre prediction.
+- **Evaluation**: Assessing the model's performance using appropriate metrics.
+
+## 🗂️ Project Structure
+
+```
+Movie-Genre-Prediction/
+├── Movie Genre Prediction.ipynb  # Jupyter Notebook with analysis and model
+├── model_evaluation.txt          # Text file containing model evaluation results
+├── test_data (1).txt             # Sample test data
+└── README.md                     # Project documentation
+```
+
+## 🔧 Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/TanishaVerma-08/Movie-Genre-Prediction.git
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd Movie-Genre-Prediction
+   ```
+
+3. **Install the required packages**:
+
+   Ensure you have Python and Jupyter Notebook installed. Then, install the necessary libraries:
+
+   ```bash
+   pip install pandas scikit-learn
+   ```
+
+## 🚀 Usage
+
+1. **Open the Jupyter Notebook**:
+
+   Launch Jupyter Notebook:
+
+   ```bash
+   jupyter notebook
+   ```
+
+   Then, open the `Movie Genre Prediction.ipynb` file.
+
+2. **Run the Notebook**:
+
+   Execute the cells in the notebook to preprocess data, train the model, and predict movie genres based on overviews.
+
+## 📝 Dataset
+
+*Note*: The dataset used for this analysis is not included in the repository. Please ensure you have the appropriate dataset before running the notebook.
